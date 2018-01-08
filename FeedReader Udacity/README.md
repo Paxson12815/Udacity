@@ -1,4 +1,4 @@
-# Opening project requires right clicking on index.html file or github https://github.com/Paxson12815/frontend-nanodegree-feedreader-master
+# Opening project requires right clicking on index.html file or github https://github.com/Paxson12815/Udacity
 
 # References: Include Mentor assistance, Forum posts, Jasmine documentation found in Udacity class and online google, reviewing documents, tech blogs, tspace assistance, https://jasmine.github.io/, http://jsbeautifier.org/, stack
 
