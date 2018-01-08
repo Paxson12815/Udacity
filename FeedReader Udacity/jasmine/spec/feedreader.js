@@ -1,12 +1,4 @@
-/* feedreader.js
- *
- * This is the spec file that Jasmine will read and contains
- * all of the tests that will be run against your application.
- */
-/* We're placing all of our tests within the $() function,
- * since some of these tests may require DOM elements. We want
- * to ensure they don't run until the DOM is ready.
- */
+//We're placing all of our tests within the $() function,since some of these tests may require DOM elements. We want to ensure they don't run until the DOM is ready.
 $(function() {
     //This suite is all about the RSS feeds definitions, the allFeeds variable in our application.
     describe('RSS Feeds', function() {
@@ -68,19 +60,20 @@ $(function() {
     describe('New Feed Selection', function() {
         //Write a test that ensures when a new feed is loaded by the loadFeed function that the content actually changes.
         //define variables used
-        var newfeederSelection1
-        var oldfeederSelection2
+        var newfeederSelection0
+        var oldfeederSelection1
+        //beforeeach and loadFeed
         beforeEach(function(done) {
             loadFeed(0, function() {
-                newfeederSelection1 = $('.feed').text();
+                newfeederSelection0=$('.feed').text();
                 loadFeed(1, function() {
-                    oldfeederSelection2 = $('.feed').text();
+                    oldfeederSelection1=$('.feed').text();
                     done();
                 });
             });
         });
         it('Content changes when new feed is loaded', function() {
-            expect(newfeederSelection1).not.toBe(oldfeederSelection2);
+            expect(newfeederSelection0).not.toBe(oldfeederSelection1);
         });
     });
 }());
